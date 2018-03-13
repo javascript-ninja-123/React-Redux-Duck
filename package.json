@@ -1,0 +1,27 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "configure": "./bin/configuredb.sh",
+    "server": "nodemon index.js",
+    "client-css":"npm run start --prefix client",
+    "client": "npm run start-js --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run client-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.1",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1"
+  }
+}

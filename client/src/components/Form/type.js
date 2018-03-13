@@ -1,0 +1,3 @@
+
+
+export const CLICK_TO_UPLOAD = 'CLICK_TO_UPLOAD'
