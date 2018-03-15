@@ -12,3 +12,20 @@ export const uploadfile = file => async (dispatch) => {
 	})
 }
 
+export const failValidation = obj => async(dispatch) => {
+	console.log(obj,'failed')
+}
+
+
+export const successValidation = obj => async(dispatch) => {
+	console.log(obj,'success')
+}
+
+
+export const err = err => async(dispatch) => {
+	console.log(err)
+}
+
+export const success = data => async(dispatch) => {
+	console.log(data)
+}
